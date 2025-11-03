@@ -43,7 +43,7 @@ function renderProjects() {
     projectDiv.setAttribute('data-skills', project.skills.join(', '));
     
     projectDiv.innerHTML = `
-      <img src="${project.image}" alt="${project.title}" />
+      <img src="${project.image}" alt="${project.title}" class="project-image" />
       <div class="project-content">
         <h3>${project.title}</h3>
         <p>${project.description}</p>
@@ -60,6 +60,8 @@ function renderProjects() {
     
     projectsGrid.appendChild(projectDiv);
   });
+  
+  setupImagePreview();
 }
 
 function setupEventListeners() {
@@ -178,4 +180,33 @@ function clearFilter() {
   projectSkillTags.forEach((tag) => tag.classList.remove("active"));
   projectElements.forEach((p) => p.classList.remove("dimmed"));
   projectElements.forEach((p) => projectsGrid.appendChild(p));
+}
+
+function setupImagePreview() {
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-image");
+  const closeBtn = document.querySelector(".modal-close");
+  const projectImages = document.querySelectorAll(".project-image");
+
+  projectImages.forEach((img) => {
+    img.addEventListener("click", (e) => {
+      e.stopPropagation();
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
 }
