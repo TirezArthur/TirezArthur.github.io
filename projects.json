@@ -18,42 +18,42 @@
       "description": "Project in which I learnt different rendering techniques, I made both a software rasterizer and a ray tracer. Then I also made a hardware version of the same ray tracer using openly. I spent quite some time looking for optimizations all throughout my code to get as many frames per second as I could.",
       "skills": ["C++", "OpenGL", "SDL", "Git"],
       "link": "https://github.com/TirezArthur/DualRasterizer",
-      "image": "https://placehold.co/600x400/0f141a/5AF78E?text=Dual+Rasterizer"
+      "image": "Images/dualRasterizer.gif"
     },
     {
       "title": "Shrimpact",
       "description": "Team project in which I learnt how to work in a team. We made a full game from prototyping to polish. I mostly worked on the ui and camera system but helped out on various parts of the project where needed. A big part of this project involved planning what everyone would be working every week.",
       "skills": ["C#", "Unity"],
       "link": "https://jelleadyns.itch.io/shrimpact",
-      "image": "https://placehold.co/600x400/0f141a/5AF78E?text=Shrimpact"
+      "image": "Images/shrimpact.png"
     },
     {
       "title": "Zombie Game AI",
       "description": "Project which I made a state based ai to play a small survival game and score as high as possible. I used utility scoring to have it decide between which action currently is the best action to take.",
       "skills": ["C++", "Git"],
       "link": "https://github.com/TirezArthur/ZombieGameAI",
-      "image": "https://placehold.co/600x400/0f141a/5AF78E?text=Zombie+Game+AI"
+      "image": "Images/zombieGameAi.gif"
     },
     {
       "title": "Custom Game Engine",
       "description": "Project in which I learnt how to use programming patterns for clean system design. I made my own component based game engine, I spent a lot of time thinking about how my interfaces would be used and what features would be nice to have even if not required to function.",
       "skills": ["C++", "SDL", "Git"],
       "link": "https://github.com/TirezArthur/Prog4Engine",
-      "image": "https://placehold.co/600x400/0f141a/5AF78E?text=Prog4+Engine"
+      "image": "Images/bomberman.gif"
     },
     {
       "title": "Lua Engine Bindings",
       "description": "Project in which I made an existing game engine addressable through Lua. I used sol2 to create bindings between engine functions and Lua, then I wrote solitaire with all game logic happening in Lua.",
       "skills": ["C++", "Lua", "Sol2", "Git"],
       "link": "https://github.com/TirezArthur/LuaGameEngineBindings",
-      "image": "https://placehold.co/600x400/0f141a/5AF78E?text=Lua+Bindings"
+      "image": "Images/solitaire.gif"
     },
     {
       "title": "Blasphemous Recreation",
       "description": "Early project in which I recreated a 2D game. Remaking the Metroidvania Blasphemous, I learnt a lot on how to use files to store data like levels or animation frames in an unordered spritesheet. I used jsoncpp for this with a small secondary program I made to be able to easily edit these files.",
       "skills": ["C++", "JsonCPP", "Git"],
       "link": "https://github.com/HowestDAE/Blasphemous-TirezArthur",
-      "image": "https://placehold.co/600x400/0f141a/5AF78E?text=Blasphemous+2D"
+      "image": "Images/blasphemous.gif"
     }
   ]
 }

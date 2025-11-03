@@ -52,7 +52,7 @@ function renderProjects() {
             ${project.skills.map(skill => `<span class="used-skill">${skill}</span>`).join('')}
           </div>
           <a href="${project.link}" target="_blank" class="project-link">
-            <img src="link.png" alt="link" />
+            <img src="Images/link.png" alt="link" />
           </a>
         </div>
       </div>
